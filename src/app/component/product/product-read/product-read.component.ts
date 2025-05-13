@@ -10,7 +10,6 @@ import { ProductService } from '../product.service';
 export class ProductReadComponent implements OnInit {
   products!: Product[]; // Lista de produtos
   displayedColumns = ['proId', 'proNome', 'proPrecoCusto', 'proPrecoVenda', 'action']; // Colunas exibidas na tabela
-
   // Injeta o serviço ProductService no construtor
   constructor(private productService: ProductService) {}
 
